@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MarioBros-Encanador</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./assets/icon.png" alt="mario">
+        <a>Home</a>
+        <a>Fale conosco</a>
+        <a>Nossos serviços</a>
+    </header>
+    <div class="caixa-mae">
+
+        <div class="caixa-principal">
+            <img class="img-logo" src="./assets/logo.png" alt="logo do Mario">
+            <p> Encanadores Mario & luigi - Resolvendo seus problemas hidraulicos com estilo! </p>
+            <p> Você já se encontrou em uma êmergencia com encanamentos? Vazamentos inesperados, canos entupidos ou
+                torneiras que não param de pingar? Não se preocpe, estamos aqui para salvar o dia! Apresentamos os
+                encanadores mais famosos do reino dos cogumelos - Mario & Luigi!</p>
+            <button class="button-main" onclick="CliqueiNoBotao()"> Entre em contato </button>
+        </div>
+
+        <div class="caixa-img">
+            <img class="img-mario" src="./assets/mario.png" alt="Mario & Luigi">
+        </div>
+    </div>
+    <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>s
+    <a class="link-whats" href="https://wa.link/lh0ddl">
+        <img src="./assets/WhatsApp_Logo_PNG_Sem_Fundo_Original_Transparente.png" alt="logo do whatsapp">
+    </a>
+    <div onclick="cliqueinamascara()" class="mascara-formulario"></div>
+    <form class="formulario-de-contato"
+    action="https://formcarry.com/s/90m1In-aGYY"
+    method="POST"
+    enctype="multipart/form-data">
+        <input placeholder="Nome" type="text" name="nome">
+        <input placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="digite seu problema" name="duvidas"></textarea>
+        <button type="submit">Pedir orçamento</button>
+    </form>
+
+</body>
+<script src="scrips.js"></script>
+
+</html>

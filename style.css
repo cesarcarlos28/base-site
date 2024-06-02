@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+header a {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+header a:hover {
+    color: #C51111;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+}
+
+header img {
+    height: 60px;
+    top: 20px;
+    left: 20px;
+}
+
+p {
+    color: #ffffff;
+    margin-top: 8px;
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+
+.link-header {
+    text-transform: uppercase;
+}
+
+.img-logo {
+    height: 200px;
+}
+
+.img-mario {
+    height: 500px;
+}
+
+.button-main {
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+}
+
+.button-main:hover {
+    width: 210px;
+    height: 52.5px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    background-color: #5b0c0c;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 100px;
+    justify-content: space-around;
+}
+
+.caixa-principal {
+    width: 50%;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0
+}
+
+.link-whats img {
+    max-width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.formulario-de-contato {
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+
+.formulario-de-contato button {
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 2px;
+    outline-color: #18d80f;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 2px;
+    outline-color: #18d80f;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    transition: visibility 1s ease-in-out;
+
+}
+
+@media(max-width: 1100px) {
+    p {
+        display: none;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .caixa-principal {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-logo {
+        width: 80vw;
+        height: auto;
+    }
+
+    .img-mario {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+/*
+final
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+*/
